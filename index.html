@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Of Dom</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Wellcome to my DOM</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Wellcome to my DOM</h1>
+            <ul>
+                <li>jalali set</li>
+                <li>shorif khan</li>
+                <li>bachu miya</li>
+                <li>bodrul alom</li>
+            </ul>
+        </section>
+        <section class="froutes-container">
+            <h1 id="froutes-title">Fruits Items</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Banana</li>
+                <li>Carrat</li>
+            </ul>
+        </section>
+        <section id="Places-containers">
+            <h1>Places I like to visit</h1>
+            <ul>
+                <li class="importent-places">Soondarbon</li>
+                <li class="importent-places">Bandorbon</li>
+                <li class="importent-places">katabon</li>
+                <li>Shalbon</li>
+            </ul>
+        </section>
+
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/style-dom.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        for (li of liCollection) {
+            // console.log(li.innerText);
+            const allHeading = document.getElementsByTagName('h1')
+            for (const h1 of allHeading) {
+                // console.log(h1.innerText)
+            }
+        }
+
+        const Places = document.getElementsByClassName('importent-places');
+        for (Place of Places) {
+            // console.log(Place.innerText);
+        }
+
+        const someLi = document.querySelectorAll('.froutes-container');
+        // console.log(someLi)
+        for (li of someLi) {
+            // console.log(li.innerText);
+        }
+
+    </script>
+</body>
+
+</html>
